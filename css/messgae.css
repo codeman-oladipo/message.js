@@ -1,0 +1,148 @@
+ul[message] {
+    width : 300px;
+    border: 1px #cee1ff solid;
+    padding: 5px;
+    margin: 5px;
+    position: fixed;  
+    right: 10px;
+    bottom: 10px;   
+    max-height: 95%;
+    overflow-y: hidden;
+    list-style: none;   
+}
+
+ul[message] li.content {
+    font-family: candara;
+    font-size: 12px;
+    max-height: 60px;
+    height: 60px;
+    overflow-y: scroll;
+    margin-bottom: 5px;
+    position: relative; 
+}
+
+ul[message] .content:last-child {
+     border-bottom: none;
+     margin-bottom: 0;
+     padding-bottom: 0;
+}
+
+ul[message] .placeholder {
+    height: 60px;
+    width: 60px;
+    float: left;
+    padding: 0 10px 0px 0;
+}
+
+li img.closeIcon {
+    right: 2px;
+    position: absolute;
+    opacity: 0.7;
+}
+
+li img.closeIcon:hover {
+    opacity: 1;
+}
+
+div[inner] {
+    margin-right: 2px;
+    padding: 5px 15px 0 5px;
+    min-height: 60px;
+    text-align: justify;
+}
+
+div[inner].grey {
+    margin-right: 2px;
+    background: #cfe7fa;
+    background: -moz-linear-gradient(top, #cfe7fa 0%, #6393c1 100%);
+    background: -webkit-linear-gradient(top, #cfe7fa 0%,#6393c1 100%);
+    background: linear-gradient(to bottom, #cfe7fa 0%,#6393c1 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=0 ); 
+    border-right: 18px solid #7e9dbc;
+}
+
+div[inner].dark {
+    margin-right: 2px;
+    background: #454545;
+    color: #fff;
+    border-right: 18px solid #3f4041;
+}
+
+div[inner].light {
+    margin-right: 2px;
+    background: #f8f3f3;
+    color: #000;
+    border-right: 18px solid #bebebe;
+}
+
+div[inner].aurora {
+    margin-right: 2px;
+    background: #9dd53a; /* Old browsers */
+    background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 79%, #7cbc0a 100%); 
+    background: -webkit-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 79%,#7cbc0a 100%); 
+    background: linear-gradient(to bottom, #9dd53a 0%,#a1d54f 50%,#80c217 79%,#7cbc0a 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); 
+    border-right: 18px solid #7ebe09;
+}
+
+div[inner].azure {
+    margin-right: 2px;
+    border-right: 18px solid #00A2F7;
+    background: #87e0fd; /* Old browsers */
+    background: -moz-linear-gradient(top, #87e0fd 0%, #53cbf1 40%, #05abe0 100%); 
+    background: -webkit-linear-gradient(top, #87e0fd 0%,#53cbf1 40%,#05abe0 100%); 
+    background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=0 ); 
+}
+
+div[inner].default_theme {
+    margin-right: 2px;
+    background: rgb(242,246,248); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 100%, rgba(224,239,249,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 100%,rgba(224,239,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 100%,rgba(224,239,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=1 ); /* IE6-9 */
+    border-right: 18px solid rgb(196, 209, 217);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.err {
+   background-color: rgba(253, 130, 64, 0.46);
+   padding: 5px;
+   font : 14px strong;
+}
+
+.hide {
+   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    ul[message] {
+    width : 96%;
+    border: 1px #cee1ff solid;
+    padding: 0px;
+    position: fixed;  
+    bottom: 10px;   
+    max-height: 95%;
+    overflow-y: hidden;
+    list-style: none;  
+  }
+    
+    ul[message] li.content {
+         font-size: 14px;
+    }
+}
