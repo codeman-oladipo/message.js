@@ -1,6 +1,5 @@
 /*****************************************************************************************
 Author : Adebanji Oguntade
-Project : Message.js is a micro javascript framework for displaying messages on a web page
 ******************************************************************************************/
 
 (function(){
